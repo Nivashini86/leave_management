@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url( "employepic.jpg");
+            background-position: center;
+            background-size: cover;
+            align-items: center;
+            display: flex;
+             justify-content: center; 
+            height: 100vh;
+        }
+
+        .login-container {
+            background: #fbfcfd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            background: #67dd80;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action=""" method="post">
+            <label for="email" id="email">
+            <input type="email" name="email" placeholder="E-mail"  pattern=".+@gmail.com"required>
+            <label for="password" id="password"></label>
+            <input type="password" name="password" placeholder="Password" pattern=".{6,}" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
